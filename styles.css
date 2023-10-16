@@ -1,0 +1,89 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.generate-button, .copy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover, .copy-button:hover {
+    background-color: #0056b3;
+}
+
+.result-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.deeplink-text {
+    font-size: 16px;
+    color: #007BFF;
+    word-break: break-all;
+}
+
+.copy-button {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* Estilos para la marca de agua en el footer */
+.watermark {
+    position: relative;
+}
+
+.watermark{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    text-align: center;
+    padding: 5px;
+    color: #333; /* Color del texto */
+    font-size: 14px;
+}
