@@ -2,7 +2,7 @@ function generateDeeplink() {
     const originalLink = document.getElementById('originalLink').value;
     let deeplink = null;
 
-    const domains = ['https://www.pin-up.casino/', 'https://www.pin-up313.com/', 'https://pin-up.world/', 'https://www.pin-up.bet/', 'https://www.pin-up475.com/', 'https://www.pin-up325.com/'];
+    const domains = ['https://www.pin-up.casino/', 'https://www.pin-up313.com/', 'https://pin-up.world/', 'https://www.pin-up.bet/', 'https://www.pin-up475.com/'];
 
     for (const domain of domains) {
         const parts = originalLink.split(domain);
